@@ -37,7 +37,7 @@ export default function app(){
     <div className="App">
       <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row">
-          <label htmlFor="item"> <span className="animated-text">
+          <label > <span className="animated-text">
               <span className="key">T</span>
               <span className="key">o</span>
               <span className="key">d</span>
@@ -51,7 +51,8 @@ export default function app(){
               <span className="key">a</span>
               <span className="key">y</span>
                 </span> </label>
-          <input value={newItem} onChange={e => setNewItem(e.target.value)} type="text" placeholder="type to remember" id="item" />
+                <span style={{fontSize: 30 }}>{':'}</span>
+          <input value={newItem} onChange={e => setNewItem(e.target.value)} type="text" placeholder="type to remember" id="input" />
         </div>
         <button className="btn btn-success">Add</button>
       </form>

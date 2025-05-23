@@ -22,9 +22,33 @@ form .btn{
 }
 
 
+#input{
+  background: transparent;
+  border: none;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+}
+
+input[type="text"]:focus {
+  border: none;         
+  outline-width: 0;
+}
+
+#input[placeholder="type to remember"]{
+  padding: 0 0 0 15px;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+
 
 .key {
-  font-size: 28px;
+  font-size: 35px;
   display: inline-block;
   font-weight: bold;
   transition: transform 0.2s;
